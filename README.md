@@ -1,15 +1,15 @@
-# 度偶指纹浏览器 Windows Beta
+# 度偶指纹浏览器 Windows
 
-本仓库仅用于 Windows x64 安装包、ZIP、许可证、校验摘要及发行说明的公开分发。
+当前正式版：[0.2.0 · Windows x64](https://github.com/DuouTech/duou-browser-downloads/releases/tag/v0.2.0)。本仓库仅用于安装包、ZIP、公钥、签名更新清单、许可证和核验资料的公开分发。
 
-[查看版本与下载文件](https://github.com/DuouTech/duou-browser-downloads/releases)
+## 安装与升级
 
-## 安装说明
+- 下载 `DuouBrowser-0.2.0-win32-x64-stable-setup.exe` 安装，或完整解压 ZIP 后运行程序。
+- Beta.2 未配置自动更新，首次升级到 0.2.0 需手动安装到原目录。升级前正常关闭应用和浏览器环境，保留原有数据目录。
+- 0.2.0 的 NSIS 安装版使用稳定更新通道，验证更新清单签名及安装包完整性，用户确认后才安装并重启。ZIP 不支持应用内原位更新。
+- 本版采用浏览器专属长期 Ed25519 应用更新签名，没有 Windows Authenticode 发布者证书签名，Windows 可能显示“未知发布者”。这两种签名不能互相替代。
+- 使用发行页的 `SHA256SUMS.txt` 核对下载文件。公开公钥为 `windows-update-public.pem`，更新元数据为 `latest.yml`。
 
-- 下载版本页面中的 `DuouBrowser-*-win32-x64-beta-setup.exe`，或完整解压 ZIP 后运行程序。
-- 本阶段为手动安装的 Beta，尚未进行 Windows Authenticode 发布者签名，Windows 可能显示未知发布者或 SmartScreen 提示。
-- 自动更新暂未开放；后续版本需要从本仓库手动下载。没有自动更新清单、临时更新密钥或占位更新地址。
-- 升级前正常关闭浏览器环境和应用，备份重要数据。不要删除原有用户数据目录。
-- 具体功能、验收范围、已知限制及 SHA-256 以每个版本的发行说明和 `SHA256SUMS.txt` 为准。
+具体功能、验收范围和限制以版本发行说明为准。旧 [Beta.2](https://github.com/DuouTech/duou-browser-downloads/releases/tag/v0.2.0-beta.2) 保留原附件与历史状态。
 
 本仓库不存放开发源码、私钥、凭据或用户浏览器资料。保留上游 MIT 许可及随二进制提供的第三方许可。
